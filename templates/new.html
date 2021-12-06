@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!--====== Advanced Tab Start ======-->
+
+<div class="container" style="margin-top: 200px;">
+    <div class="row">
+        <div class="col-lg-6 col-md-10">
+            <div class="advanced-tab-text">
+                <div class="section-title mb-40">
+                    <span class="title-tag">Blog</span>
+                    <h2 class="title">{{new.title}}</h2>
+
+                </div>
+                <body>
+                    {{new.content |safe}}
+                </body>
+            </div>
+        </div>
+		<div class="col-lg-6 col-md-10">
+            <img src="../../media/{{new.image}}" alt="Image">
+        </div>
+    </div>
+</div>
+                    
+
+{% endblock %}
